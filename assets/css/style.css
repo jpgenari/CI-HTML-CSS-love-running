@@ -60,12 +60,18 @@ ul {
     border-bottom: 1px solid #3a3a3a; /* adds underline to the page where the user is currently at */
 }
 
-/* hero-image */
+/* hero-image and cover text*/
 
 #hero-outer {
     height: 600px;
     width: 100%;
     overflow: hidden;
+
+    position: relative; /* allows child to position absolute to the parent */
+}
+
+#cover-text, #cover-text h2 { /* h2 added to override main h2 rule above */
+    color: #fff;
 }
 
 #hero-image {
@@ -87,4 +93,24 @@ ul {
     to{
         transform: scale(1.1);
     }
+}
+
+#cover-text {
+    font-size: 130%;
+    font-family: Oswald, sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 4px; /* space between letters */
+
+    width: 300px; /* div size - height and width */
+    height: 200px;
+
+    padding-top: 40px;
+    padding-left: 10px;
+
+    background-color: rgba(241, 109, 107, .7); /* rgba value for oppacity */
+
+    bottom: 30px; /* placing at a fixed position relative to its parent container */
+    right: 150px;
+
+    position: absolute;
 }
