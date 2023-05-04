@@ -41,7 +41,7 @@ h2 {
     /* design using multiple of 75 - 75, 150, 300... */
 }
 
-ul {
+nav ul {
     float: right
         /* solution found to keep correct items order without changing html */
 }
@@ -232,4 +232,25 @@ hr {
 
 #times h2 {
     color: #fafafa;
+}
+
+/* footer */
+
+footer {
+    height: 120px;
+}
+
+.social-networks {
+    text-align: center;
+}
+
+.social-networks > li {
+    display: inline;
+}
+
+.social-networks i {
+    font-size: 160%;
+    margin: 1%;
+    padding: 5%;
+    color: #3a3a3a;
 }
