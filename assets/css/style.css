@@ -151,7 +151,8 @@ nav ul {
 
 #center-about {
     width: 33%;
-    margin: 0 auto; /* no floating for center, apply 0 + auto */
+    margin: 0 auto;
+    /* no floating for center, apply 0 + auto */
 }
 
 hr {
@@ -197,7 +198,8 @@ hr {
     border-style: solid;
     border-color: #ccc;
     border-width: 1px;
-    border-radius: 50%; /* setting 50% works for square containers in order to make a circle */ 
+    border-radius: 50%;
+    /* setting 50% works for square containers in order to make a circle */
     margin: 0 auto;
 }
 
@@ -227,7 +229,8 @@ hr {
     padding: 30px 0 0 10px;
     text-align: center;
     border: 2px solid white;
-    box-sizing: border-box; /* it tells the browser the borders are part of the total width keeping 100% */
+    box-sizing: border-box;
+    /* it tells the browser the borders are part of the total width keeping 100% */
 }
 
 #times h2 {
@@ -244,7 +247,7 @@ footer {
     text-align: center;
 }
 
-.social-networks > li {
+.social-networks>li {
     display: inline;
 }
 
@@ -264,11 +267,11 @@ footer {
     column-gap: 0;
 }
 
-#photos > img {
+#photos>img {
     width: 100%;
 }
 
-/* Media queries */ 
+/* Media queries */
 
 /* For larger to medium screens size from 1200px wide and down */
 @media screen and (max-width: 1200px) {
@@ -283,7 +286,8 @@ footer {
         margin: 0;
     }
 
-    #left-about, #right-about {
+    #left-about,
+    #right-about {
         width: 100%;
         float: left;
         padding: 0;
@@ -296,7 +300,7 @@ footer {
         padding: 0;
     }
 
-    #times > div {
+    #times>div {
         width: 100%;
         clear: both;
         height: 150px;
@@ -311,13 +315,14 @@ footer {
 /* For medium screen sizes from 950px */
 
 @media screen and (max-width: 950px) {
-    
+
     #menu {
         clear: left;
         float: left;
         margin-left: 30px;
         margin-bottom: 20px;
-        line-height: 25px;}
+        line-height: 25px;
+    }
 
     #cover-text {
         left: 0;
@@ -329,17 +334,33 @@ footer {
         margin: 0 auto;
     }
 
-    .left-about-heading, .right-about-heading {
+    .left-about-heading,
+    .right-about-heading {
         width: inherit;
     }
 
-    .left-about-heading, .right-about-heading h2 {
+    .left-about-heading,
+    .right-about-heading h2 {
         width: 100%;
         text-align: center;
     }
 
-        .left-about-heading, .right-about-heading p {
-            text-align: center;
-            padding: 0 20px;
-        }
+    .left-about-heading,
+    .right-about-heading p {
+        text-align: center;
+        padding: 0 20px;
+    }
+
+    #photos {
+        column-count: 3;
+    }
+}
+
+/* for small sceen sizes 800px and down */
+
+@media screen and (max-width: 800px) {
+
+    #photos {
+        column-count: 2;
+    }
 }
